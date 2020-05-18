@@ -23,39 +23,74 @@
 .jc-between{    justify-content: space-between; }
 
 /* Main ___________________________________________________________________________________________________*/
-main{   background-color: var(--col-main);    }
-
-main > div > div{
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: var(--col-content);
+main{
+    background-color: var(--col-main);
+    padding-top: 6.3125rem;
 }
 
-main > div > div > div p{
+main a{
+    text-decoration: none;
+    color: var(--col-font-content);
+}
+
+main > div > div > div{
+    border: solid 1px var(--col-main);
+    background-color: var(--col-content);
+    margin-bottom: 1.875rem;
+
+}
+
+main > div > div > div > div{
+    box-sizing: border-box;
+    padding: 20px 20px 0;
+    border-bottom: solid 1px var(--col-main);
+    margin-bottom: .625rem;
+}
+
+main > div > div > div > div p{
     font-size: .875rem;
     color: var(--col-font-content);
 }
 
-main > div > div > div button{
+main > div > div > div > div > div:first-child{
+    height: 15.625rem;
+    background-color: var(--col-img-content);
+}
+
+main > div > div > div > div h4{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main > div > div > div > div > div:nth-child(2) > p{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px var(--col-main);
+}
+
+main > div > div > div > div > p{
+    margin-bottom: 2rem;
+}
+
+main > div > div > div > div button{
     color: var(--col-content);
     background-color: var(--col-footer);
     border-radius: 3px;
     border: none;
     width: 32.43%;
     height: 2.5rem;
+    padding: 0;
+    margin-bottom: 2rem;
 }
 
-main > div > div > div > div:first-child{
-    height: 15.625rem;
-    background-color: var(--col-img-content);
-}
-
-main > div > div > div h4{
-    font-size: 1.5rem;
+main > div > div > div > div > div:nth-of-type(3){
+    margin-top: 0;
+    border-top: solid 1px var(--col-main);;
 }
 
 .separate{
-    border: solid 1px var(--col-font-content);
+    border: solid 1px var(--col-main);
     margin-left: 1rem;
     margin-right: 1rem;
 }
