@@ -5,6 +5,7 @@
     --col-img-content: #CCCCCC;
     --col-font-content: #A1B1BC;
     --col-footer: #2C3E50;
+    --col-bc-blockquote: #21C2F8;
 }
 
 /* Class -------------------------------*/
@@ -28,6 +29,8 @@ main{
     padding-top: 6.3125rem;
 }
 
+main iframe{    border: none;   }
+
 main a{
     text-decoration: none;
     color: var(--col-font-content);
@@ -47,12 +50,13 @@ main > div > div > div > div{
     margin-bottom: .625rem;
 }
 
-main > div > div > div > div p{
+main p{
     font-size: .875rem;
     color: var(--col-font-content);
+    line-height: 1.5rem;
 }
 
-main > div > div > div > div > div:first-child{
+.content-image{
     height: 15.625rem;
     background-color: var(--col-img-content);
 }
@@ -84,7 +88,7 @@ main > div > div > div > div button{
     margin-bottom: 2rem;
 }
 
-main > div > div > div > div > div:nth-of-type(3){
+main > div > div > div > div > div:last-of-type{
     margin-top: 0;
     border-top: solid 1px var(--col-main);;
 }
@@ -93,4 +97,43 @@ main > div > div > div > div > div:nth-of-type(3){
     border: solid 1px var(--col-main);
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+/* Blockquote ----------------------------------*/
+main blockquote{
+    width: 100%;
+    height: 15.625rem;
+    background-color: var(--col-bc-blockquote);
+    margin: 0;
+    overflow: hidden;
+}
+
+main blockquote p{
+    
+    width: 85.5%;
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+    padding: .75rem 0 0 1.15625rem;
+    color: var(--col-content);
+    margin: 0;
+}
+
+main blockquote div{
+    box-sizing: border-box;
+    height: 90%;
+    
+    overflow: hidden;
+}
+
+main blockquote div > a{
+    align-self: end;
+    color: var(--col-content);
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+}
+
+main blockquote footer{
+    border-top: solid 1px var(--col-content);
+    padding: 0 0 0 1.15625rem;
+    color: var(--col-content);
 }
