@@ -1,3 +1,13 @@
+/* Var ---------------------------------*/
+:root{
+    --col-main: #ECF0F1;
+    --col-content: #fff;
+    --col-img-content: #CCCCCC;
+    --col-font-content: #A1B1BC;
+    --col-footer: #2C3E50;
+}
+
+/* Class -------------------------------*/
 .siz-container{
     width: 100%;
     max-width: 1170px;
@@ -11,3 +21,41 @@
 .wrap{  flex-wrap: wrap;}
 
 .jc-between{    justify-content: space-between; }
+
+/* Main ___________________________________________________________________________________________________*/
+main{   background-color: var(--col-main);    }
+
+main > div > div{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--col-content);
+}
+
+main > div > div > div p{
+    font-size: .875rem;
+    color: var(--col-font-content);
+}
+
+main > div > div > div button{
+    color: var(--col-content);
+    background-color: var(--col-footer);
+    border-radius: 3px;
+    border: none;
+    width: 32.43%;
+    height: 2.5rem;
+}
+
+main > div > div > div > div:first-child{
+    height: 15.625rem;
+    background-color: var(--col-img-content);
+}
+
+main > div > div > div h4{
+    font-size: 1.5rem;
+}
+
+.separate{
+    border: solid 1px var(--col-font-content);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
