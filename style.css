@@ -31,6 +31,22 @@ main{
 
 main iframe{    border: none;   }
 
+.button-read-more{
+    color: var(--col-content);
+    background-color: var(--col-footer);
+    border-radius: 3px;
+    border: none;
+    width: 32.43%;
+    height: 2.5rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.content-image{
+    height: 15.625rem;
+    background-color: var(--col-img-content);
+}
+
 main a{
     text-decoration: none;
     color: var(--col-font-content);
@@ -56,47 +72,28 @@ main p{
     line-height: 1.5rem;
 }
 
-.content-image{
-    height: 15.625rem;
-    background-color: var(--col-img-content);
-}
-
 main > div > div > div > div h4{
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-main > div > div > div > div > div:nth-child(2) > p{
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-    border-bottom: solid 1px var(--col-main);
-}
-
 main > div > div > div > div > p{
-    margin-bottom: 2rem;
-}
-
-main > div > div > div > div button{
-    color: var(--col-content);
-    background-color: var(--col-footer);
-    border-radius: 3px;
-    border: none;
-    width: 32.43%;
-    height: 2.5rem;
-    padding: 0;
-    margin-bottom: 2rem;
+    padding-bottom: 1.68rem;
 }
 
 main > div > div > div > div > div:last-of-type{
     margin-top: 0;
-    border-top: solid 1px var(--col-main);;
 }
 
 .separate{
     border: solid 1px var(--col-main);
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.content-border-bottom{
+    border-bottom: solid 1px var(--col-main);
 }
 
 /* Blockquote ----------------------------------*/
@@ -137,3 +134,31 @@ main blockquote footer{
     padding: 0 0 0 1.15625rem;
     color: var(--col-content);
 }
+
+/* Fin Blockquote -----------------------*/
+/* Slideshow ----------------------------*/
+#container-slideshow1{
+    position: relative;
+    overflow: hidden;
+    height: 219px;
+    width: 100%;
+}
+
+#slideshow1{
+    position: absolute;
+    width: 200%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+#slideshow1 li{
+    display: inline;
+}
+
+#container-slideshow:target #slideshow{
+    left: -100%;
+}
+/* Fin Slideshow -------------------------*/
