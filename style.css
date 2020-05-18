@@ -1,1 +1,13 @@
+.siz-container{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
 
+.siz-content{   width: 31.62%;  }
+
+.d-flex{    display: flex;  }
+
+.wrap{  flex-wrap: wrap;}
+
+.jc-between{    justify-content: space-between; }
