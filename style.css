@@ -82,6 +82,19 @@ main > div > div > div > div > div:last-of-type{
 .content-border-bottom{
     border-bottom: solid 1px var(--col-content-border);
 }
+/* Only Text ----------------------------------*/
+.only-text:hover{
+    background-color: var(--col-footer);
+}
+
+.only-text:hover h4{
+    color: var(--col-content);
+}
+
+div.only-text:hover > div > div:first-child a{
+    color: var(--col-hover);
+}
+/* Fin Only Text ------------------------------*/
 
 /* Button Read More ---------------------------*/
 .button-read-more{
