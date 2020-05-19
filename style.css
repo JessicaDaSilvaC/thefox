@@ -1,1 +1,200 @@
-
+@font-face {
+	font-family: "ElegantI";
+	src: url('fonts/ElegantIcons.eot');
+	src: local('☺'), url('fonts/ElegantIcons.woff') format('woff'), url('fonts/ElegantIcons.ttf') format('truetype'), url('fonts/ElegantIcons.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LatoN';
+	src: url('fonts/Lato-Black.eot');
+	src: local('☺'), url('fonts/Lato-Black.woff') format('woff'), url('fonts/Lato-Black.ttf') format('truetype'), url('fonts/Lato-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoB";
+	src: url('fonts/Lato-Bold.eot');
+	src: local('☺'), url('fonts/Lato-Bold.woff') format('woff'), url('fonts/Lato-Bold.ttf') format('truetype'), url('fonts/Lato-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "LatoR";
+	src: url('fonts/Lato-Regular.eot');
+	src: local('☺'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+}
+:root
+{
+	--font-color: #A1B1BC;
+}
+/*Barre de langue, panier et réseau - Start*/
+.tete
+{
+	display:flex;
+	justify-content: flex-end;
+	margin-top: 25px;
+	color: var(--font-color);
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
+.menu, menu ul
+{
+    margin-right: 850px;
+	list-style: none;
+	font-family: "LatoB";
+	font-size: 14px;
+}
+.menu li 
+{
+    display: inline-block;
+}
+.menu ul li 
+{
+    display: inherit;
+}
+.menu a 
+{
+    text-decoration: none;
+    display: block;
+	color: var(--font-color);
+}
+.sous
+{
+	position: absolute;
+	left: -999em;
+}
+.menu li:hover .sous
+{
+	left: auto;
+}
+.langue
+{
+	font-family: "LatoB", "ElegantI" ;
+}
+.panier
+{
+	text-decoration: none;
+	font-family: "LatoN";
+	font-size: 13px;
+	margin-right: 3%;
+	border: 1px ridge #A1B1BC;
+	padding: 3px;
+}
+.reseau
+{
+	font-family: "ElegantI";
+}
+.reseau ul
+{
+	display: flex;
+	justify-content: space-between;
+	width: 250px;
+	list-style-type: none;
+}
+.reseau a
+{
+	text-decoration: none;
+	color: var(--font-color);
+}
+/*Barre de langue, panier et réseau - End*/
+/*Logo, barre de navigation et de recherche - Start*/
+nav
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 89%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+hr
+{
+	border: none;
+	border-bottom: 1px solid #A1B1BC;
+	width: 100%;
+}
+.logo
+{
+	margin-right: 45px;
+}
+.pages ul
+{
+	display: flex;
+	flex-direction: row;
+}
+.pages li
+{
+	list-style-type: none;
+	margin-right: 80px;
+}
+.pages a:hover
+{
+	color: #1ABC9C;
+	border-top: 3px solid #1ABC9C;
+	padding-top: 30px;
+}
+.pages a
+{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "LatoR";
+	color: var(--font-color);
+}
+#loupe
+{
+	font-family: "ElegantI";
+	font-size: 20px;
+	color: #2C3E50;
+}
+.bas
+{
+	border-bottom: 1px solid #A1B1BC;
+	width: 100%;
+	box-shadow: 0 4px 10px 5px #A1B1BC;
+}
+/*Logo, barre de navigation et de recherche - End*/
+/* Blog, chemin - Start */
+.info
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.blog
+{
+	font-family: "LatoR";
+	font-size: 20px;
+	color: #2C3E50;
+	margin-right: 750px;
+	margin-left: -40px;
+}
+.chemin 
+{
+	font-family: "LatoR", "ElegantI";
+	font-size: 14px;
+	color: var(--font-color);
+}
+.chemin ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+.chemin li
+{
+	margin-right: 15px;
+}
+.icone
+{
+	font-family: "ElegantI";
+	font-size: 16px;
+}
+/* Blog, chemin - End */
