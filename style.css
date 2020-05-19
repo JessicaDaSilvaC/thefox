@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-.siz-content{   width: 31.62%;  }
+.siz-content{   width: 370px;  }
 
 .d-flex{    display: flex;  }
 
@@ -45,14 +45,14 @@ main > div:first-child{
     border-bottom: solid 1px var(--col-content-border);
 }
 
-main > div > div > div{
+main > div:first-child > div > div{
     border: solid 1px var(--col-content-border);
     background-color: var(--col-content);
     margin-bottom: 1.875rem;
 
 }
 
-main > div > div > div > div{
+main > div:first-child > div > div > div{
     box-sizing: border-box;
     padding: 20px 20px 0;
     border-bottom: solid 1px var(--col-content-border);
@@ -65,17 +65,18 @@ main p{
     line-height: 1.5rem;
 }
 
-main > div > div > div > div h4{
+main > div:first-child > div > div > div h4{
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: var(--col-hover-content);
 }
 
-main > div > div > div > div > p{
+main > div:first-child > div > div > div > p{
     padding-bottom: 1.68rem;
 }
 
-main > div > div > div > div > div:last-of-type{
+main > div:first-child > div > div > div > div:last-of-type{
     margin-top: 0;
 }
 
@@ -92,6 +93,7 @@ main > div > div > div > div > div:last-of-type{
 /* End of main --------------------------------*/
 main > div:nth-child(2){
     margin-top: 1.875rem;
+    padding-bottom: 6.25rem;
 }
 
 main > div:nth-child(2) span{
@@ -301,3 +303,32 @@ audio{
     width: 100%;
 }
 /* Fin Audio -----------------------------*/
+
+/* Media Queries ___________________________________________________________________________________________*/
+@media screen and (max-width: 1199.98px){
+    main > div:first-child{
+        justify-content: center;
+    }
+
+    main > div:first-child > div:first-child{
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 991.98px){
+    main > div:first-child{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > div:first-child > div:first-child{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 575.98px){
+    main > div:nth-child(2) > div:first-child{
+        width: 40%;
+        height: 1rem;
+    }
+}
