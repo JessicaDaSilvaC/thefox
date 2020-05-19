@@ -217,29 +217,44 @@ blockquote:hover .font-icon{
 /* Fin Blockquote -----------------------*/
 
 /* Slideshow ----------------------------*/
-#container-slideshow1{
+.slideshow > div > div:first-child{
     position: relative;
-    overflow: hidden;
-    height: 219px;
-    width: 100%;
 }
 
-#slideshow1{
+.slideshow > div > div:first-child > div{
     position: absolute;
-    width: 200%;
-    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow > div > div:first-child a{
+    color: var(--col-footer);
+}
+
+.slideshow > div > div:first-child div:nth-of-type(3) > a{
+    color: var(--col-content);
+}
+
+.slideshow > div > div:first-child > div:first-of-type{
+    top: 45%;
     left: 0;
-    margin: 0;
-    padding: 0;
-    transition: 1s;
+    background-color: var(--col-content);
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
-#slideshow1 li{
-    display: inline;
+.slideshow > div > div:first-child > div:nth-of-type(2){
+    top: 45%;
+    right: 0;
+    background-color: var(--col-content);
+    width: 1.875rem;
+    height: 1.875rem;
+
 }
 
-#container-slideshow:target #slideshow{
-    left: -100%;
+.slideshow > div > div:first-child > div:nth-of-type(3){
+    top: 0;
+    right: 0;
 }
 /* Fin Slideshow -------------------------*/
 
