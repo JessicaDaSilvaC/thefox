@@ -5,9 +5,10 @@
     --col-content: #fff;
     --col-img-content: #CCCCCC;
     --col-font-content: #A1B1BC;
-    --col-footer: #2C3E50;
+    --col-footer: #222533;
     --col-bc-blockquote: #21C2F8;
     --col-hover: #1ABC9C;
+    --col-hover-content: #2C3E50;
     --col-bc-hover-image: rgba(34, 37, 51, .7);
 }
 
@@ -37,6 +38,11 @@ main iframe{    border: none;   }
 main a{
     text-decoration: none;
     color: var(--col-font-content);
+}
+
+main > div:first-child{ 
+    padding-bottom: 1.25rem;
+    border-bottom: solid 1px var(--col-content-border);
 }
 
 main > div > div > div{
@@ -82,9 +88,41 @@ main > div > div > div > div > div:last-of-type{
 .content-border-bottom{
     border-bottom: solid 1px var(--col-content-border);
 }
+
+/* End of main --------------------------------*/
+main > div:nth-child(2){
+    margin-top: 1.875rem;
+}
+
+main > div:nth-child(2) span{
+    color: var(--col-hover);
+}
+
+main > div:nth-child(2) > div > div{
+    width: 3.125rem;
+    height: 3.125;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--col-footer);
+    border-radius: 3px;
+    border: none;
+    margin-left: .625rem;
+}
+
+main > div:nth-child(2) > div > div:hover{
+    background-color: var(--col-hover-content);
+}
+
+main > div:nth-child(2) > div > div:hover p{
+    color: var(--col-hover);
+}
+
+main > div:nth-child(2) > div > div > p{
+    color: var(--col-content);    
+}
 /* Only Text ----------------------------------*/
 .only-text:hover{
-    background-color: var(--col-footer);
+    background-color: var(--col-hover-content);
 }
 
 .only-text:hover h4{
@@ -99,7 +137,7 @@ div.only-text:hover > div > div:first-child a{
 /* Button Read More ---------------------------*/
 .button-read-more{
     color: var(--col-content);
-    background-color: var(--col-footer);
+    background-color: var(--col-hover-content);
     border-radius: 3px;
     border: none;
     width: 32.43%;
@@ -208,7 +246,7 @@ main blockquote footer{
 }
 
 blockquote:hover{
-    background-color: var(--col-footer);
+    background-color: var(--col-hover-content);
 }
 
 blockquote:hover .font-icon{
@@ -228,7 +266,7 @@ blockquote:hover .font-icon{
 }
 
 .slideshow > div > div:first-child a{
-    color: var(--col-footer);
+    color: var(--col-hover-content);
 }
 
 .slideshow > div > div:first-child div:nth-of-type(3) > a{
