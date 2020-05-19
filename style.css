@@ -1,11 +1,13 @@
 /* Var ---------------------------------*/
 :root{
-    --col-main: #ECF0F1;
+    --col-main: #F9FBFB;
+    --col-content-border: #ECF0F1;
     --col-content: #fff;
     --col-img-content: #CCCCCC;
     --col-font-content: #A1B1BC;
     --col-footer: #2C3E50;
     --col-bc-blockquote: #21C2F8;
+    --col-hover: #1ABC9C;
 }
 
 /* Class -------------------------------*/
@@ -31,29 +33,13 @@ main{
 
 main iframe{    border: none;   }
 
-.button-read-more{
-    color: var(--col-content);
-    background-color: var(--col-footer);
-    border-radius: 3px;
-    border: none;
-    width: 32.43%;
-    height: 2.5rem;
-    padding: 0;
-    margin-bottom: 2rem;
-}
-
-.content-image{
-    height: 15.625rem;
-    background-color: var(--col-img-content);
-}
-
 main a{
     text-decoration: none;
     color: var(--col-font-content);
 }
 
 main > div > div > div{
-    border: solid 1px var(--col-main);
+    border: solid 1px var(--col-content-border);
     background-color: var(--col-content);
     margin-bottom: 1.875rem;
 
@@ -62,7 +48,7 @@ main > div > div > div{
 main > div > div > div > div{
     box-sizing: border-box;
     padding: 20px 20px 0;
-    border-bottom: solid 1px var(--col-main);
+    border-bottom: solid 1px var(--col-content-border);
     margin-bottom: .625rem;
 }
 
@@ -87,14 +73,44 @@ main > div > div > div > div > div:last-of-type{
 }
 
 .separate{
-    border: solid 1px var(--col-main);
+    border: solid 1px var(--col-content-border);
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .content-border-bottom{
-    border-bottom: solid 1px var(--col-main);
+    border-bottom: solid 1px var(--col-content-border);
 }
+
+/* Button Read More ---------------------------*/
+.button-read-more{
+    color: var(--col-content);
+    background-color: var(--col-footer);
+    border-radius: 3px;
+    border: none;
+    width: 32.43%;
+    height: 2.5rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.button-read-more:hover{
+    background-color: var(--col-hover);
+    cursor: pointer;
+}
+/* Fin Button Read More ----------------------*/
+
+/* Image ---------------------------------------*/
+.content-image{
+    height: 15.625rem;
+    background-color: var(--col-img-content);
+    position: relative;
+}
+
+.content-image:hover{
+
+}
+/* Fin Images ----------------------------------*/
 
 /* Blockquote ----------------------------------*/
 main blockquote{
@@ -134,8 +150,8 @@ main blockquote footer{
     padding: 0 0 0 1.15625rem;
     color: var(--col-content);
 }
-
 /* Fin Blockquote -----------------------*/
+
 /* Slideshow ----------------------------*/
 #container-slideshow1{
     position: relative;
@@ -162,3 +178,9 @@ main blockquote footer{
     left: -100%;
 }
 /* Fin Slideshow -------------------------*/
+
+/* Audio ---------------------------------*/
+audio{
+    width: 100%;
+}
+/* Fin Audio -----------------------------*/
