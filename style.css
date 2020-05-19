@@ -8,6 +8,7 @@
     --col-footer: #2C3E50;
     --col-bc-blockquote: #21C2F8;
     --col-hover: #1ABC9C;
+    --col-bc-hover-image: rgba(34, 37, 51, .7);
 }
 
 /* Class -------------------------------*/
@@ -107,8 +108,50 @@ main > div > div > div > div > div:last-of-type{
     position: relative;
 }
 
-.content-image:hover{
+.image-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
 
+.image-hover:hover{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--col-bc-hover-image);
+    opacity: 1;
+}
+
+.circle-hover-image{
+    width: 40px;
+    height: 40px;
+    border: solid 1px var(--col-content);
+    border-radius: 20px;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-hover-image > div{
+    color: var(--col-content);
+    font-size: 1rem;
+}
+
+.circle-hover-image:hover{
+    border: solid 1px var(--col-bc-blockquote);
+    background-color: var(--col-bc-blockquote);
+}
+
+.image-hover > p:first-of-type{
+    font-size: 1.5rem;
+    color: var(--col-content);
+    margin-bottom: 0;
+}
+
+.image-hover > p:nth-of-type(2){
+    color: var(--col-content);
+    margin-top: 0;
 }
 /* Fin Images ----------------------------------*/
 
@@ -149,6 +192,14 @@ main blockquote footer{
     border-top: solid 1px var(--col-content);
     padding: 0 0 0 1.15625rem;
     color: var(--col-content);
+}
+
+blockquote:hover{
+    background-color: var(--col-footer);
+}
+
+blockquote:hover .font-icon{
+    color: var(--col-hover);
 }
 /* Fin Blockquote -----------------------*/
 
