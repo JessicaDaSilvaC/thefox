@@ -130,8 +130,8 @@ main > div:first-child > div > div > div > div:last-of-type{
 
 .separate{
     border: solid 1px var(--col-content-border);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: .8rem;
+    margin-right: .8rem;
 }
 
 .content-border-bottom{
@@ -286,6 +286,7 @@ main blockquote div > a{
     align-self: end;
     color: var(--col-content);
     margin-bottom: 1rem;
+    margin-right: 1rem;
     font-size: 1.875rem;
 }
 
@@ -299,7 +300,7 @@ blockquote:hover{
     background-color: var(--col-hover-content);
 }
 
-blockquote:hover .font-icon{
+blockquote:hover .fa-link{
     color: var(--col-hover);
 }
 /* Fin Blockquote -----------------------*/
