@@ -1,3 +1,48 @@
+/* Fonts __________________________________________________________________________________________________*/
+/*!
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("fonts/fa-solid-900.eot");
+    src: url("fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("fonts/fa-solid-900.woff2") format("woff2"), url("fonts/fa-solid-900.woff") format("woff"), url("fonts/fa-solid-900.ttf") format("truetype"), url("fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+ 
+/*!
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("fonts/fa-regular-400.eot");
+    src: url("fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("fonts/fa-regular-400.woff2") format("woff2"), url("fonts/fa-regular-400.woff") format("woff"), url("fonts/fa-regular-400.ttf") format("truetype"), url("fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400; }
+
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+
+
+.fa-link:before{    content: "\f0c1";   }  
+
+.fa-search:before { content: "\f002";   }
+
+.fa-comments:before{content:"\f086";    }
+
+.fa-calendar-alt:before {   content: "\f073";   }
+
+.fa-heart:before {   content: "\f004";   }
+
 /* Var ---------------------------------*/
 :root{
     --col-main: #F9FBFB;
@@ -13,6 +58,9 @@
 }
 
 /* Class -------------------------------*/
+.font-icon{
+    font-family: 'fontAwesome';
+}
 .siz-container{
     width: 100%;
     max-width: 1170px;
@@ -332,3 +380,4 @@ audio{
         height: 1rem;
     }
 }
+
