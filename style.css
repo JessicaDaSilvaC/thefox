@@ -37,6 +37,7 @@
 	--color-vert: #1ABC9C;
 	--color-sombre: #2C3E50;
 }
+
 /*Barre de langue, panier et réseau - Start*/
 .tete
 {
@@ -457,8 +458,9 @@ input
 }
 
 @media screen and (max-width: 767.98px){
-	body{
+	html, body{
 		overflow-x: hidden;
+		position: relative;
 	}
 	.nav-links{
 		position: absolute;
@@ -474,7 +476,7 @@ input
 		z-index: 1;
 	}
 	.pages{
-		justify-content: end;
+		width: min-content;
 	}
 	.burger{
 		display: block;
@@ -485,6 +487,9 @@ input
 }
 
 @media screen and (max-width: 575.98px){
+	.nav-links{
+		top: 162px;
+	}
 	.tete{
 		flex-wrap: wrap-reverse;
 		margin-top: 10px;
